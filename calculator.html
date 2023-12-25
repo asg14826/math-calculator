@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="text" style="border: 2px black solid;">
+    <input id="num2" type="text" style="border: 2px rgb(240, 14, 14) solid;">
+    <button id="add" onclick="add()">+</button>
+    <button id="reduce" onclick="reduce()">-</button>
+    <button id="multiple" onclick="multiple()">*</button>
+    <button id="devide" onclick="devide()">/</button>
+    <p>result:<span id="result"></span></p>
+
+    <script>
+        //ad
+        function add(){
+            let add1 = parseFloat(document.getElementById("num1").value)
+            let add2 = parseFloat(document.getElementById("num2").value)
+            let addResult = add1 + add2
+            document.getElementById("result").innerHTML = addResult
+        }
+
+        //reduce
+        function reduce(){
+            let add1 = parseFloat(document.getElementById("num1").value)
+            let add2 = parseFloat(document.getElementById("num2").value)
+            let addResult = add1 - add2
+            document.getElementById("result").innerHTML = addResult
+        }
+
+        //multiple
+        function multiple(){
+            let add1 = parseFloat(document.getElementById("num1").value)
+            let add2 = parseFloat(document.getElementById("num2").value)
+            let addResult = add1 * add2
+            document.getElementById("result").innerHTML = addResult
+        }
+        //devide
+        function devide(){
+            let add1 = parseFloat(document.getElementById("num1").value)
+            let add2 = parseFloat(document.getElementById("num2").value)
+            let addResult = add1 / add2
+            document.getElementById("result").innerHTML = addResult  
+        }
+    </script>
+</body>
+</html>
