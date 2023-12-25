@@ -12,9 +12,11 @@
     <button id="reduce" onclick="reduce()">-</button>
     <button id="multiple" onclick="multiple()">*</button>
     <button id="devide" onclick="devide()">/</button>
-    <p>result:<span id="result"></span></p>
+    <p id="father">result:<span id="result"></span></p>
 
     <script>
+
+        
         //ad
         function add(){
             let add1 = parseFloat(document.getElementById("num1").value)
@@ -43,7 +45,12 @@
             let add1 = parseFloat(document.getElementById("num1").value)
             let add2 = parseFloat(document.getElementById("num2").value)
             let addResult = add1 / add2
-            document.getElementById("result").innerHTML = addResult  
+            document.getElementById("result").innerHTML = addResult
+            if(add1 == 0 || add2 == 0){
+                document.getElementById("father").style.color = "red"
+                document.getElementById("result").style.color = "red"
+                document.getElementById("result").innerHTML = "NAN" 
+            }
         }
     </script>
 </body>
