@@ -7,33 +7,22 @@
 </head>
     <input  id="num1" type="text" style="border: 2px black solid;">
     <input id="num2" type="text" style="border: 2px rgb(240, 14, 14) solid;">
-    <button class="btn" id="add" onclick="calculator()">+</button>
-    <button class="btn" id="reduce" onclick="calculator()">-</button>
-    <button class="btn" id="multiple" onclick="calculator()">*</button>
-    <button class="btn" id="devide" onclick="calculator()">/</button>
+    <button class="btn" id="add" onclick="returnBtns()">0</button>
+    <button class="btn" id="reduce" onclick="calculator()">1</button>
+    <button class="btn" id="multiple" onclick="calculator()">2</button>
+    <button class="btn" id="devide" onclick="calculator()">3</button>
     <p id="father">result:<span id="result"></span></p>
     <script>
-    let arr =[]
-        arr[0] = document.getElementById("add").innerHTML
-        arr[1] = document.getElementById("reduce").innerHTML
-        arr[2] = document.getElementById("multiple").innerHTML
-        arr[3] = document.getElementById("devide").innerHTML
-        console.log(arr)
-        function calculator(){
-            if(arr[].inn)
-            let add1 = parseFloat(document.getElementById("num1").value)
-            let add2 = parseFloat(document.getElementById("num2").value)
+        
+        let a = parseInt(prompt("enter a num"))
 
-            switch(arr){
-                case "+": 
-                    let addResult = add1 + add2
-                    document.getElementById("result").innerHTML = addResult
-                    console.log(addResult)
-                    break;
-                    
+       
 
-            } 
-        }
+        document.write(a)
+
+        
     </script>
+
+    
 </body>
 </html>
